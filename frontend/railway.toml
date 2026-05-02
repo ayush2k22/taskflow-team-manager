@@ -1,7 +1,5 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm cache clean --force && npm ci && npm run build"
 
 [deploy]
-startCommand = "npx serve -s build -l 3000"
 restartPolicyType = "on_failure"
